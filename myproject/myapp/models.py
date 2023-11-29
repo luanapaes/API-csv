@@ -7,8 +7,7 @@ class FitinsightBase(models.Model):
     day_of_week = models.CharField(max_length=3)
     time = models.CharField(max_length=2)
     category = models.CharField(max_length=50)
-    attended = models.BooleanField()
-    presence = models.BooleanField(null=True, blank=True)
+    attended = models.BooleanField(null=True, blank=True)
 
     # coluna inicialmente vazia
     # new column

@@ -29,7 +29,6 @@ def upload_csv(request):
                     day_of_week=row['day_of_week'],
                     time=row['time'],
                     category=row['category'],
-                    attended=row['attended'] == '1'
                 )
 
             return JsonResponse({'message': 'Dados do CSV foram salvos com sucesso.'})
